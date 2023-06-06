@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1392</width>
+    <height>865</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QCustomPlot" name="graphField" native="true">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>1201</width>
+      <height>801</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="epsLineEdit">
+    <property name="geometry">
+     <rect>
+      <x>1230</x>
+      <y>10</y>
+      <width>141</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>ε</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="gradButtom">
+    <property name="geometry">
+     <rect>
+      <x>1230</x>
+      <y>130</y>
+      <width>141</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Метод
+градиентного
+спуска</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="quickGradButton">
+    <property name="geometry">
+     <rect>
+      <x>1230</x>
+      <y>210</y>
+      <width>141</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Метод
+наискорейшего
+спуска</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="conjGradButton">
+    <property name="geometry">
+     <rect>
+      <x>1230</x>
+      <y>290</y>
+      <width>141</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Метод
+сопряженных
+градиентов</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="nextButton">
+    <property name="geometry">
+     <rect>
+      <x>1230</x>
+      <y>690</y>
+      <width>141</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Вперед</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="prevButton">
+    <property name="geometry">
+     <rect>
+      <x>1230</x>
+      <y>760</y>
+      <width>141</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Назад</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="x1LineEdit">
+    <property name="geometry">
+     <rect>
+      <x>1230</x>
+      <y>50</y>
+      <width>141</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>x1</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="axiesCheckBox">
+    <property name="geometry">
+     <rect>
+      <x>1230</x>
+      <y>570</y>
+      <width>110</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string>Оси</string>
+    </property>
+    <property name="tristate">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="levelLinesCheckBox">
+    <property name="geometry">
+     <rect>
+      <x>1230</x>
+      <y>630</y>
+      <width>151</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Линии уровня</string>
+    </property>
+    <property name="tristate">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="axiesLabelsCheckBox">
+    <property name="geometry">
+     <rect>
+      <x>1230</x>
+      <y>600</y>
+      <width>141</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Подписи осей</string>
+    </property>
+    <property name="tristate">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="x2LineEdit">
+    <property name="geometry">
+     <rect>
+      <x>1230</x>
+      <y>90</y>
+      <width>141</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>x2</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1392</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header>qcustomplot/qcustomplot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
